@@ -14,7 +14,7 @@ func main() {
 	signName := flag.String("signName", "文储", "请输入模版内容")
 
 	flag.Parse()
-	client, err := dysmsapi.NewClientWithAccessKey("ap-northeast-1", "LTAIkTnta6mAZWi6", "yoEErikPWWmBnvCXNKmCOAvQmtBAlP")
+	client, err := dysmsapi.NewClientWithAccessKey("ap-northeast-1", "APPKEY", "秘钥")
 
 	request := dysmsapi.CreateSendSmsRequest()
 	request.Scheme = "https"
